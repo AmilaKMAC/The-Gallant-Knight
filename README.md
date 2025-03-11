@@ -1,7 +1,7 @@
 # The-Gallant-Knight
 
 ## Description
-This is a 2D side-scrolling action game where players control a courageous knight to navigate through obstacles and challenging terrain. The game features dynamic speed control for obstacles, animations, and interactive elements that enhance the gameplay experience.
+This is a 2D action game where players control a courageous knight to navigate through obstacles and challenging terrain. The game features dynamic speed control for obstacles, animations, and interactive elements that enhance the gameplay experience.
 
 ## Features
 - Random obstacle generation with varied distances between obstacles.
