@@ -1,9 +1,9 @@
-# The-Gallant-Knight
+# The-Gallant-Knight.
 
-## Description
+## Description.
 This is a 2D action game where players control a courageous knight to navigate through obstacles and challenging terrain. The game features dynamic speed control for obstacles, animations, and interactive elements that enhance the gameplay experience.
 
-## Features
+## Features.
 - Random obstacle generation with varied distances between obstacles.
 - Jump, run, idle, and dead animations for the knight.
 - Sound effects used to enhance the gaming experience.

@@ -65,12 +65,12 @@ function JumpImages() {
     jump_image_no++;
 
     if (jump_image_no <= 6) {
-        knightMarginTop -= 50;
+        knightMarginTop -= 60;
         knight.style.marginTop = knightMarginTop + "px";
     }
 
     if (jump_image_no >= 7) {
-        knightMarginTop += 50;
+        knightMarginTop += 60;
         knight.style.marginTop = knightMarginTop + "px";
     }
 
@@ -89,12 +89,12 @@ function JumpKnight() {
     i = 0;
     clearInterval(run_animation);
     jump_sound.play();
-    jump_animation = setInterval(JumpImages, 70);
+    jump_animation = setInterval(JumpImages, 150);
     run_sound.pause(); 
 }
 
 // Obstacle
-let obstacleSpeed = 15;
+let obstacleSpeed = 30;
 
 let lastObstaclePosition = 0;
 let minDistance = 800; // Minimum distance between obstacles
@@ -133,7 +133,7 @@ function ObstacleAnimation() {
 
         // Check collision
         if (newMarginLeft >= -1100 && newMarginLeft <= -500) {
-            if (knightMarginTop > 530) {
+            if (knightMarginTop > 550) {
                 box.style.display = "none";
 
                 clearInterval(obstacle_animation);
@@ -171,7 +171,7 @@ function DeathKnight() {
         isDead = true;
     }
 
-    knightMarginTop = 620;
+    knightMarginTop = 630;
     knight.style.marginTop = knightMarginTop + "px";
 
     knight.src = `resources/png/Dead (${death_image_no}).png`;
@@ -223,7 +223,7 @@ function startGame() {
     }
 
     if (move_background_animation == 0) {
-        move_background_animation = setInterval(moveBackground, 20);
+        move_background_animation = setInterval(moveBackground, 10);
     }
 
     if (obstacle_animation == 0) {
